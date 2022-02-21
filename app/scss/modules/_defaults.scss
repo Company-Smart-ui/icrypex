@@ -1,0 +1,32 @@
+html {
+  overflow-x: hidden;
+}
+
+body, input, textarea {
+  font-family: $ff;
+}
+
+a {
+  text-decoration: none;
+  color: $color_default;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {  
+  width: $container;
+  margin: 0 auto;
+
+  @include md {
+    width: $container-xl;
+  }
+}

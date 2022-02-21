@@ -1,0 +1,30 @@
+@mixin desc {
+  @media (min-width: $break_desc) {
+    @content;
+  }  	
+}
+
+@mixin md {
+  @media (min-width: $break_md) {
+    @content;
+  }  	
+}
+
+@mixin sm {
+  @media (min-width: $break_sm) {
+    @content;
+  }  	
+}
+
+@mixin xs {
+  @media (min-width: $break_xs) {
+    @content;
+  }  	
+}
+
+@mixin xxs {
+  @media (min-width: $break_xxs) {
+    @content;
+  }  	
+}
+    
