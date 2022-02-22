@@ -1,0 +1,30 @@
+.tabs_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #758CA3;
+    padding-bottom: 5px;
+    h2 {
+        font-size: 25px;
+        color: #004378;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        &::before {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #098CDF;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            z-index: 1;
+        }
+    }
+    a.active {
+        color: #098CDF;
+    }
+    a:not(:last-child) {
+        margin-right: 30px;
+    }
+}

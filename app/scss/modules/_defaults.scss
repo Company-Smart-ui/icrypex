@@ -3,12 +3,12 @@ html {
 }
 
 body, input, textarea {
-  font-family: $ff;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: $color_default;
+  color: #004378;
 }
 
 img {
@@ -23,8 +23,9 @@ img {
 }
 
 .container {  
-  width: $container;
+  width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 
   @include md {
     width: $container-xl;
