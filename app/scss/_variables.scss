@@ -1,7 +1,8 @@
 // general
-$ff: 'Barlow Condensed';
-$fz: '17px';
+$ff: 'Barlow Condensed', sans-serif;
+$fz: 17px;
 $fw: 400;
+$lh: 20px;
 
 $__IMG_PATH: '../img/';
 $__FONTS_PATH: '../fonts/';
@@ -11,6 +12,7 @@ $__FONTS_PATH: '../fonts/';
 $color_primary: #4294FF;
 $color_default: #707070;
 $color_lightGray: #E4E8F2;
+$color_ligthBlue: #F8FAFF;
 $color_text: #6677A0; 
 $transparent: rgba(0,0,0,0);
 

@@ -1,0 +1,14 @@
+.dropdown {
+
+  &__title {
+    color: #fff;
+    background: $color_primary;
+    text-transform: uppercase;
+    padding: 12px;
+  }
+
+  &__content {
+    background: $color_ligthBlue;
+    padding: 12px;
+  }
+}

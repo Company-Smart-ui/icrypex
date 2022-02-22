@@ -1,7 +1,9 @@
-body, input, textarea {
-  font-family: $ff, sans-serif;
+body, input, textarea, button {
+  font-family: $ff;
   font-size: $fz;
   font-weight: $fw;
+  color: $color_text;
+  line-height: $lh;
 }
 
 a {
