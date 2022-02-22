@@ -1,19 +1,22 @@
 // general
-$ff: '';
+$ff: 'Barlow Condensed';
+$fz: '17px';
+$fw: 400;
 
 $__IMG_PATH: '../img/';
 $__FONTS_PATH: '../fonts/';
 
 
 // colors
-$color_primary: #fff;
-$color_secondary: #fff;
-$color_default: #fff;
+$color_primary: #4294FF;
+$color_default: #707070;
+$color_lightGray: #E4E8F2;
+$color_text: #6677A0; 
 $transparent: rgba(0,0,0,0);
 
 //layout
-$container-xl: '';
-$container: '';
+$container-xl: 1170px;
+$container: 100%;
 
 
 //breakpoints

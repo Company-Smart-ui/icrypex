@@ -1,14 +1,11 @@
-html {
-  overflow-x: hidden;
-}
-
 body, input, textarea {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: $ff, sans-serif;
+  font-size: $fz;
+  font-weight: $fw;
 }
 
 a {
   text-decoration: none;
-  color: #004378;
 }
 
 img {
@@ -23,7 +20,7 @@ img {
 }
 
 .container {  
-  width: 1170px;
+  width: $container;
   margin: 0 auto;
   padding: 0 15px;
 
