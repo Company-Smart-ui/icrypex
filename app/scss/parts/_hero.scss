@@ -1,0 +1,43 @@
+.hero {
+  padding: 40px 0 76px 0;
+
+  @include sm {
+    padding: 94px 0 127px 0;
+  }
+
+  .container {
+    
+    @include sm {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 48px;
+      align-items: center;
+    }
+  }
+
+  &__content {
+
+    @include sm {
+      order: 1;
+    }
+  }
+
+  &__banner {
+
+    @include sm {
+      order: 2;
+    }
+
+    img {
+      margin: 0 auto 28px auto;
+      width: 225px;
+      height: auto;
+
+      @include sm {
+        margin-right: auto;
+        width: 100%;
+        max-width: 394px;
+      }
+    }
+  }
+}

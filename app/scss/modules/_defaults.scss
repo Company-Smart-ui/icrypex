@@ -30,3 +30,12 @@ img {
     width: $container-xl;
   }
 }
+
+p {
+
+  a {
+    font-weight: 700;
+    color: $color_text;
+    text-decoration: underline;
+  }
+}

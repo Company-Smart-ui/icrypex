@@ -32,23 +32,36 @@ window.addEventListener('load', function() {
   function heroRangeHandler() {
     const parent = hero_range.parentNode;
     const line = parent.querySelector('.range__line');
-    const { max, value, step } = hero_range;
+    const { max, value } = hero_range;
     const percent = (value / max * 100).toFixed(0);    
 
     line.style.setProperty('--perc', `${percent}%`);
-    heroRangeBulletsPainter(value, step, parent);
+    heroRangeBulletsPainter(parent, value, max);
   }
 
-  function heroRangeBulletsPainter(value, step, parent) {
+  function heroRangeBulletsPainter(parent, value, max) {
     const bullets = parent.querySelectorAll('.range__bullets i');
 
-    for(let i=0; i<bullets.length;i++) {
-      if (step * i == value) {
-        console.log(i, value);
+    console.log('---');
+
+    for(let i = 1; i < bullets.length; i++) {
+      if ( ((max / 7) * i) > +value ) {
         bullets[i].parentNode.dataset.step = i;
+        console.log('step = ', i);
         break;
+      } else {
+        bullets[i].parentNode.dataset.step = bullets.length;
       }
+      console.log(((max / 7) * i), value);
     }
+
+    // bullets.forEach((bl, i) => {    
+    //   if ( ((max / 7) * i) > +value ) {
+    //     bl.parentNode.dataset.step = i;
+    //     console.log('step = ', i);
+    //   }
+    //   console.log(((max / 7) * i), value);
+    // });
   }
 
   

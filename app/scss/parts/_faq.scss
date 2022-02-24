@@ -1,0 +1,14 @@
+.faq {
+  padding: 0 0 88px 0;
+  
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .dropdown {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

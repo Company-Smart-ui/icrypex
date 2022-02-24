@@ -1,5 +1,19 @@
 .heading {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $color_primary;
+
+  @include sm {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+
+
+.title {
   font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
+  line-height: 22px;
 }

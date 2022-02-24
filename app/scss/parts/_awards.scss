@@ -1,0 +1,64 @@
+.awards {
+  padding: 0 0 32px 0;
+
+  @include xs {
+    padding: 0 0 103px 0;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  &__intro {
+    padding: 0 0 32px 0;
+
+    @include xs {
+      padding: 0 0 88px 0;
+    }
+  }
+
+  &__item {
+    
+    @include xs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      grid-gap: 62px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+
+      @include xs {
+        margin-bottom: 88px;
+      }
+    }
+
+    &:not(.awards__item--reversed) {
+      .awards__content {
+        order: 1;
+      }
+
+      .awards__banner  {
+        order: 2;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 24px;
+
+    @include xs {
+      margin-top: 0
+    }
+  }
+
+  &__banner {
+
+    img {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+  
+}

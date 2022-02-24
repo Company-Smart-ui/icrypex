@@ -1,0 +1,94 @@
+.references {
+  padding: 0 0 114px 0;
+
+  @include xs {
+    padding: 0 0 86px 0;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+}
+
+.referencesSchema {
+  padding: 42px 0 0 0;
+
+  @include xs {
+    padding: 30px 0 0 0;
+  }
+
+  &__intro {
+    padding: 10px 16px;
+    background: $color_ligthBlue;
+
+    @include xxs {      
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+
+      @include xxs {
+        margin-bottom: 0;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    &.black {
+      &::before {
+        background: $schema_black;
+      }
+    }
+
+    &.blue {
+      &::before {
+        background: $schema_blue;
+      }      
+    }
+
+    &.red {
+      &::before {
+        background: $schema_red;
+      }      
+    }
+
+    &.green {
+      &::before {
+        background: $schema_green;
+      }      
+    }
+  }
+
+  &__schema {
+    margin-top: 40px;
+
+    @include xs {
+      margin-top: 60px;
+    }
+
+    img {
+      margin: 0 auto;
+
+      @include xs {
+        margin: 0;
+      }
+    }
+  }
+}

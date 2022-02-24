@@ -1,0 +1,139 @@
+.deliveryWatch {
+  margin-bottom: 86px;
+  background: $color_ligthBlue;
+
+  @include xs {
+    margin-bottom: 0;
+    padding: 0 0 117px 0;
+    background: $transparent;
+  }
+
+  &__summary {
+    padding: 32px 0;
+    background: $color_ligthBlue; 
+
+    @include xs {
+      margin-bottom: 114px;
+      padding: 32px 16px;
+    }
+
+    @include sm {
+      padding: 56px 192px;
+    }
+
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__filter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    @include xs {
+      grid-gap: 20px;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    .select {
+      grid-column: span 4;
+
+      @include xxs {
+        grid-column: span 2;
+      }
+
+      &__title {
+        width: 100%;
+        text-align: left;
+      }
+
+      + .btn {
+        
+        @include xxs {
+          grid-column-start: 1;
+        }
+
+        @include xs {
+          grid-column-start: auto;
+        }
+      }
+    }
+    
+  }
+
+  &__result {
+    padding: 45px 0 0 0;
+
+    @include xs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+  }
+
+  &__resultItem {
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @include xs {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__resultTotal {
+    margin-top: 9px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      color: $color_green;
+      margin-left: 4px;
+      font-weight: 400;
+    }
+  }
+
+  &__info {
+    display: none;
+    
+    @include xs {
+      display: block;
+    }
+
+    .title {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__table {
+    margin-top: 32px;
+
+    table {
+      width: 100%;
+
+      thead {
+        background: $color_ligthBlue;
+      }
+
+      tbody {
+
+        td {
+          padding-top: 32px;
+        }
+      }
+
+      td {
+        padding: 12px 10px;
+      }
+    }
+  }
+}

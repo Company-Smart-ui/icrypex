@@ -2,14 +2,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #758CA3;
-    padding-bottom: 5px;
+    margin: 0 -15px;
+    padding: 0 15px 5px;
+    background: linear-gradient(#001934, #003661);
     h2 {
-        font-size: 25px;
-        color: #004378;
+        font-size: 20px;
+        color: white;
+        border-bottom: 1px solid #758CA3;
+        width: 100%;
         text-transform: uppercase;
         font-weight: 400;
         position: relative;
+        padding-top: 15px;
+        margin-bottom: 5px;
+        padding-bottom: 7px;
         &::before {
             content: '';
             width: 60px;
@@ -17,9 +23,12 @@
             background: #098CDF;
             position: absolute;
             left: 0;
-            bottom: -6px;
+            bottom: -1px;
             z-index: 1;
         }
+    }
+    a {
+        display: none;
     }
     a.active {
         color: #098CDF;

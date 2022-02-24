@@ -4,4 +4,19 @@
   background: transparent;
   text-align: left;
   cursor: pointer;
+
+  &--secondary {
+    border: 1px solid $color_lightGray;
+    padding: 10px;
+    transition: all .2s;
+
+    &:hover {
+      background: $color_lightGray;
+    }
+
+    &:disabled {
+      background: $color_lightGray;
+      cursor: no-drop;
+    }
+  }
 }
