@@ -1,6 +1,7 @@
 .range {
-  margin: 50px 0;
+  margin: 24px 0 32px 0;
   position: relative;
+  width: 100%;
 
   input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */

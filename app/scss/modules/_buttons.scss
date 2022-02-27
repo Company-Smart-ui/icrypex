@@ -5,6 +5,17 @@
   text-align: left;
   cursor: pointer;
 
+  &--primary {
+    background: $color_primary;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 14px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    border: 2px solid #0266e8;
+  }
+
   &--secondary {
     border: 1px solid $color_lightGray;
     padding: 10px;

@@ -40,4 +40,62 @@
       }
     }
   }
+
+  &__intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+
+  &__introItem {
+
+    p {
+
+      span {
+        display: inline-block;
+        margin-top: 12px;
+        font-weight: 700;
+        font-size: 25px;
+      }
+    }
+
+    &:last-child {
+
+      p {
+        text-align: right;
+      }
+    }
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 16px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__actions {
+    padding-top: 56px;
+    display: flex;
+
+    .btn {
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
 }
