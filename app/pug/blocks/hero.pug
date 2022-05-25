@@ -5,6 +5,30 @@ section.hero
       img(src="./img/banner.png" alt="" width="393" height="393")
     .hero__content   
       h2.heading Arkadaşını davet et, hep birlikte kazanmaya başla!
+      .hero__intro
+        .hero__introItem 
+          p Alacağınız Oran
+          p 
+            span %20
+        .hero__introItem 
+          p Arkadaşınızın Alacağı Oran
+          p 
+            span %10
+
       include ./range.pug
+
+      .hero__copy 
+        p Referans Kimliği
+        button.btn.copy_id 07387299
+          img(src="/img/icons/copy.svg", alt="")
+      .hero__copy 
+        p Referans Linki
+        button.btn.copy_link https://accounts....f=76798118
+          img(src="/img/icons/copy.svg", alt="")
+
+      .hero__actions 
+        button.btn.btn--primary Arkadaşını Davet Et
+        button.btn.btn--primary.open_qr
+          img(src="/img/icons/qr-white.svg", alt="")
     
     
